@@ -324,7 +324,7 @@ async def on_message(message):
             i+=1
     
     #이 명령을 사용하기 위해선 nchannel.xlsx 파일이 필요합니다.
-    if message.content.startswith("!공지"):
+    if message.content.startswith("!공지"): #해당 채널에서 만 사용가능 
         if message.channel.id == 681524242076270670:
             file = openpyxl.load_workbook("nchannel.xlsx")
             sheet = file.active
@@ -344,7 +344,7 @@ async def on_message(message):
                 i+=1
     #이 아래부분은 네이버 데이터랩 api를 활용하여 제작하였습니다.
     if message.content.startswith("!이미지제작"):
-        if message.channel.id == 681524242076270670:
+        if message.channel.id == 681524242076270670: #해당 채널에서 만 사용가능 
             client_id = "네이버 api id"
             client_secret = "네이버 api secret"
             url = "https://openapi.naver.com/v1/datalab/search";
