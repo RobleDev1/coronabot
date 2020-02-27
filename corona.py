@@ -1,3 +1,5 @@
+#공지 시스템을 사용하기위해선 nchannel.xlsx 파일이 필요합니다.
+
 import discord
 import os
 import requests
